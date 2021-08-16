@@ -119,8 +119,8 @@ select{
         width: 100%;
     }
 
-    #duelo{
-        display: block;
+    #duelo .mandante, #duelo .visitante #versus{
+        display: inline;
     }
 
     #versus{
