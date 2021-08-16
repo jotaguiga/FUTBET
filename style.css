@@ -118,6 +118,11 @@ select{
     #partida{
         width: 100%;
     }
+
+    #duelo{
+        display: block;
+    }
+
     #versus{
         width: 15px;
     }
