@@ -65,12 +65,6 @@ li a img{
     
  }
 
- 
-#partida #duelo, #botao, #estadio {
-    position: relative;
-    z-index: 2;
-}
-
  #duelo{
      justify-content: center;
      text-align: center;
@@ -119,7 +113,7 @@ select{
     display: block;
 }
 
-@media (max-width: 600px){
+@media (max-width: 500px){
 
     #partida{
         width: 100%;
