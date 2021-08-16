@@ -122,13 +122,13 @@ select{
 @media (max-width: 600px){
 
     #partida{
-        width: 90%;
+        width: 100%;
     }
     #versus{
         width: 15px;
     }
 
     #nav-duelo, #nav-campeonatos, #nav-times{ 
-        margin: 10px; 
+        margin: 0px; 
     }
 }
