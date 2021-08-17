@@ -30,6 +30,15 @@ adImagens = new Array ("1divisao/americamg_bra.png", "1divisao/atleticopr_bra.pn
             document.getElementById('jogador').src="jogador.png";
             }
 
+        function mouseEmCima4(imagem) {
+            document.getElementById('menu2').src="3menu-2.png";
+            document.getElementById('menu2').style.background="#008000";
+            } 
+        function mouseFora4(imagem) {
+            document.getElementById('menu2').src="3menu.png";
+            document.getElementById('menu2').style.background="white";
+            }
+
         function mudar(){
             var valor = $("#times").find(':selected').attr('value');
             var dado = $("#times").find(':selected').attr('data-dado');
@@ -44,6 +53,7 @@ adImagens = new Array ("1divisao/americamg_bra.png", "1divisao/atleticopr_bra.pn
         function mudar2(){
             var team = $("#divisao").find(':selected').text();
                 if (team=="Série A"){
+    
                     const team1 = document.querySelector('#team1');
                     team1.textContent = 'América-MG';
                     team1.value = '1divisao/americamg_bra.png';
