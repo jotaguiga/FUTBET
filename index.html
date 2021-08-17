@@ -13,22 +13,21 @@
 
 </head>
 <body onLoad="alternar();">
-
-    <div id="menu">
+    <a id="mobile" onMouseOver="mouseEmCima4(this)" onMouseOut="mouseFora4(this)"><img id="menu2" src="3menu.png"></a>
+    <div id="menu"> 
         <div class="navegacao" id="navegacao">
             <img id="troca" src="americamg_bra.png" name="adBanner">
             <ul>
-                <li id="nav-duelo" ><a href="index.html" onMouseOver="mouseEmCima1(this)" onMouseOut="mouseFora1(this)"><img id="espadas" src="espadas.png"> Duelo</a></li>
-                <li id="nav-campeonatos" ><a href="campeonatos.html" onMouseOver="mouseEmCima2(this)" onMouseOut="mouseFora2(this)"><img id="bola" src="bolafutebol.png">Campeonatos</a></li>
-                <li id="nav-times" ><a href="times.html" onMouseOver="mouseEmCima3(this)" onMouseOut="mouseFora3(this)"><img id="jogador" src="jogador.png">Times</a></li>
+                <li id="nav-duelo" ><a id="link-duelo" href="index.html"><img id="espadas" src="espadas1.png"> Duelo</a></li>
+                <li id="nav-campeonatos" ><a id="link-campeonatos" href="campeonatos.html" onMouseOver="mouseEmCima2(this)" onMouseOut="mouseFora2(this)"><img id="bola" src="bolafutebol.png">Campeonatos</a></li>
+                <li id="nav-times" ><a id="link-times" href="times.html" onMouseOver="mouseEmCima3(this)" onMouseOut="mouseFora3(this)"><img id="jogador" src="jogador.png">Times</a></li>
             </ul>
         </div>
     </div>
 
     <div id="partida">
             <div class="mandante" id="duelo">
-                <div><img src="" id="img-mandante"></div>
-                <label for="time1">Time mandante</label>
+                <div><img src="escudo.png" id="img-mandante"></div>
                 <form id="time1" autofocus="true"> 
                     <select id="divisao" onchange="mudar2()">
                         <option data-dado="Independência" value="americamg_bra.png">Série A</option>
@@ -36,7 +35,7 @@
                         <option data-dado="Antônio Accioly" value="atleticogo_bra.png">Série C</option>
                     </select>
                     <select id="times" onchange="mudar()">
-                        <option value="">-</option>
+                        <option value="escudo.png">-</option>
                         <option id="team1" data-dado="Independência" value="1divisao/americamg_bra.png">América-MG</option>
                         <option id="team2" data-dado="Arena da Baixada" value="1divisao/atleticopr_bra.png">Athletico-PR</option>
                         <option id="team3" data-dado="Antônio Accioly" value="1divisao/atleticogo_bra.png">Atlético-GO</option>
@@ -58,14 +57,14 @@
                         <option id="team19" data-dado="Morumbi" value="1divisao/saopaulo_bra.png">São Paulo</option>
                         <option id="team20" data-dado="Ilha do Retiro" value="1divisao/sport.png">Sport</option>
                     </select>
+                    <label for="time1">Time mandante</label>
                 </form>
             </div>
 
             <div class="visitante" id="duelo"><img id="versus" src="versus.png"></div>
 
             <div class="visitante" id="duelo">
-                <div><img src="" id="img-visitante"></div>
-                <label for="time2">Time visitante</label>
+                <div><img src="escudo2.png" id="img-visitante"></div>
                 <form id="time2" autofocus="true"> 
                     <select id="divisao1" onchange="mudar3()">
                         <option value="seriea">Série A</option>
@@ -73,7 +72,7 @@
                         <option value="seriec">Série C</option>
                     </select>
                     <select id="times1" onchange="mudar1()">
-                        <option value="">-</option>
+                        <option id="escudo" value="escudo2.png">-</option>
                         <option option id="team21" value="1divisao/americamg_bra.png">América-MG</option>
                         <option option id="team22" value="1divisao/atleticopr_bra.png">Athletico-PR</option>
                         <option option id="team23" value="1divisao/atleticogo_bra.png">Atlético-GO</option>
@@ -95,6 +94,7 @@
                         <option option id="team39" value="1divisao/saopaulo_bra.png">São Paulo</option>
                         <option option id="team40" value="1divisao/sport.png">Sport</option>
                     </select>
+                    <label for="time2">Time visitante</label>
                 </form>
             </div>
             <div id="botao">
