@@ -72,3 +72,27 @@ li a img{
     vertical-align: middle;
     padding-right: 5px;
 }
+
+@media (max-width: 500px){
+
+    #mobile{
+        display: block;
+    }
+
+    #partida{
+        width: 100%;
+    }
+
+    #duelo .mandante, #duelo .visitante #versus{
+        display: inline;
+    }
+
+    #versus{
+        width: 15px;
+    }
+
+    #nav-duelo, #nav-campeonatos, #nav-times{ 
+        margin: 0px; 
+        display: none;
+    }
+}
