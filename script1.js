@@ -37,19 +37,4 @@ adImagens = new Array ("1divisao/americamg_bra.png", "1divisao/atleticopr_bra.pn
             document.getElementById('menu2').style.background="white";
             }
 
-        function fazGet(url) {
-            let request = new XMLHttpRequest()
-            request.open("GET", url, false)
-            request.setRequestHeader("Authorization", "Bearer" + test_4e7b11c66c576315c5d129f32bab3b)
-            request.send()
-            return request.responseText
-        }
-
-        function main() {
-            data = fazGet("https://api.api-futebol.com.br/v1/campeonatos/10/fases/104")
-            usuarios = JSON.parse(data);
-            console.log(usuarios)
-        }
-
-        main()
 
