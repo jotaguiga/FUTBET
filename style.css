@@ -35,9 +35,7 @@
 }
 
 #xm{
-    position: relative;
-    left: 190px;
-    top: 13px;
+    float: right;
     width: 15px;
 }
 
