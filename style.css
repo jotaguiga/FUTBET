@@ -12,8 +12,38 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 150px;
-    
+    height: 150px;    
+}
+
+#menum{
+    background: white;
+    width: 50%;
+    border-radius: 25px;
+    display: none;
+}
+
+#ulm{
+
+}
+
+.lim{
+    padding: 15px;
+}
+
+.am{
+    border: 1px solid #008000;
+}
+
+#xm{
+    position: relative;
+    left: 190px;
+    top: 13px;
+    width: 15px;
+}
+
+hr{
+    width: 90%;
+    margin: auto auto;
 }
 
 #navegacao{
@@ -80,8 +110,7 @@ li a img{
      width: 100%;
      position: relative;
      background: url(fundo-estadio.jpg) center;
-     background-size: cover;
-    
+     background-size: cover;    
  }
 
  #duelo{
@@ -139,6 +168,7 @@ select{
     }
 
     #partida{
+        margin: 50px auto;
         width: 100%;
     }
 

@@ -13,7 +13,7 @@
 
 </head>
 <body onLoad="alternar();">
-    <a id="mobile" onMouseOver="mouseEmCima4(this)" onMouseOut="mouseFora4(this)"><img id="menu2" src="3menu.png"></a>
+    <a id="mobile" onMouseOver="mouseEmCima4(this)" onMouseOut="mouseFora4(this)" onclick="abrirMenu()"><img id="menu2" src="3menu.png"></a>
     <div id="menu"> 
         <div class="navegacao" id="navegacao">
             <img id="troca" src="americamg_bra.png" name="adBanner">
@@ -23,6 +23,17 @@
                 <li id="nav-times" ><a id="link-times" href="times.html" onMouseOver="mouseEmCima3(this)" onMouseOut="mouseFora3(this)"><img id="jogador" src="jogador.png">Times</a></li>
             </ul>
         </div>
+    </div>
+
+    <div id="menum">
+        <img id="xm" src="versus.png" onclick="fecharMenu()">
+        <ul id="ulm">
+            <li class="lim"><a class="am" href="index.html"><img id="espadas" src="espadas.png">Duelo</a></li>
+            <hr>
+            <li class="lim"><a class="am" href="campeonatos.html"><img id="bola" src="bolafutebol.png">Campeonatos</a></li>
+            <hr>
+            <li class="lim"><a class="am" href="times.html"><img id="jogador" src="jogador.png">Times</a></li>
+        </ul>
     </div>
 
     <div id="partida">
