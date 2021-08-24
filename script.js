@@ -9,6 +9,14 @@ adImagens = new Array ("1divisao/americamg_bra.png", "1divisao/atleticopr_bra.pn
                 setTimeout("alternar()", 0.2 * 1000)
                 thisAd++;}}
 
+        function abrirMenu() {
+            document.getElementById('menum').style.display="block";
+            } 
+
+        function fecharMenu() {
+            document.getElementById('menum').style.display="none";
+            } 
+
         function mouseEmCima1(imagem) {
             document.getElementById('espadas').src="espadas1.png";
             } 
